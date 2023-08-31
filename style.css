@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #EFEFEF;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  background: #535971;
+  height: 368px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  width: 417px;
+  margin-top: 140px;
+}
+
+header h1 {
+  color: #FFF;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+header p {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 18px;
+ }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 64px;
+  background: #FFF;
+  border-radius: 20px 20px 0px 0px;
+  min-height: 300px;
+  padding: 64px;
+ }
+
+fieldset {
+  border: none;
+ }
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+ }
+
+fieldset legend {
+  color: #535971;
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px;
+ }
+
+ .name {
+  display: flex;
+  gap: 22px;
+ }
+
+ .name >div {
+  width: 100%;
+ }
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  color: #4E4958;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+}
+
+.input-wrapper label span {
+  color: #C1BCCC;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px; 
+}
+
+.input-wrapper label span:hover {
+  color: #706c78;
+}
+
+.input-wrapper input, .date-wrapper input {
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #E6E6F0);
+  background: var(--shapes-02, #FAFAFC);
+  height: 56px;
+  padding: 0 24px;
+
+}
+
+.date1, .date2 {
+  display: flex;
+  gap: 32px;
+}
+
+.date1 >div:nth-child(1), .date2 >div:nth-child(1) {
+  width: 100%;
+}
+
+
+h2 {
+  color: #535971;
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+footer {
+  background: #535971;
+  height: 160px;
+  border-radius: 0px 0px 20px 20px;
+  padding: 52px 71px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 366px;
+
+}
+
+footer .button {
+  padding: 15px 40px;
+  border-radius: 20px;
+  background: #FF5374;
+  color: #FFF;
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+footer .button:hover {
+  background: #bc3d57;
+  cursor: pointer;
+}
+
